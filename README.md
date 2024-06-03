@@ -19,10 +19,10 @@ Ruby version: ruby 3.2.4 (2024-04-23 revision af471c0e01) [x64-mingw-ucrt]
 
 * Implement unit tests
 
-  For the Unit Tests i'm using RSpec, to test the models,
-  and by using it i also worked on the Integration Testing for Sign Up scenario and create room scenario.
-  and i also make code coverage using SimpleCov,
-  you can see the result of all of the test in installation section
+  For the test, i'm using RSpec, not only for the Unit Test (test user and room models),
+  but also for Integration Testing (test for user signs up scenario and user creates room scenario)
+  and for the code coverage i'm using SimpleCov, i worked on all of them,
+  and you can see the result of the test in installation section
 
 * Implement tasteful UI
 
