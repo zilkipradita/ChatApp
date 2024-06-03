@@ -33,7 +33,7 @@ Ruby version: ruby 3.2.4 (2024-04-23 revision af471c0e01) [x64-mingw-ucrt]
   i'm using Vue.js via CDN for the login submit form
 
 --------------------------------------------------------------------------
-**Installation**
+## Installation
 
 Please follow this steps to run the app : 
 
@@ -41,35 +41,39 @@ Please follow this steps to run the app :
 ```
 git clone https://github.com/zilkipradita/ChatApp.git chatapp
 ```
-2. Enter the chatapp directory and run the app
+2. Enter the chatapp directory and migrate tables
+```
+rails db:migrate
+```
+3. Run the app
 ```
 rails server
 ```
+The Chatapp is up and running, and here is a preview
 
-The Chatapp is up and running,
-and here is a preview
+**Login Page**
+
+![login](https://github.com/zilkipradita/ChatApp/assets/11170489/48b5602b-fc9f-4ceb-9f75-b21c404a7337)
+
+**Chat Page**
+
+![chat](https://github.com/zilkipradita/ChatApp/assets/11170489/69cf793a-69ca-4f67-b638-1f22d8543a62)
 
 --------------------------------------------------------------------------
+## Unit Test, Integration Test, Code Coverage
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* Unit Test
 
-Things you may want to cover:
+  Open your terminal and run this test :
+  ```
+   rspec spec/models/room_spec.rb
+  ```
+  and this is the room_spec.rb file and the test result :
+  
+  ![user](https://github.com/zilkipradita/ChatApp/assets/11170489/90bdde0b-7a9e-4e5f-b666-0c6ee8f9adad)
+  
+  there are 4 tests in room_spec.rb, and all of them are passed
 
-* Ruby version
 
-* System dependencies
 
-* Configuration
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
