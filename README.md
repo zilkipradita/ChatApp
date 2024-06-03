@@ -33,6 +33,23 @@ Ruby version: ruby 3.2.4 (2024-04-23 revision af471c0e01) [x64-mingw-ucrt]
   i'm using Vue.js via CDN for the login submit form
 
 --------------------------------------------------------------------------
+**Installation**
+
+Please follow this steps to run the app : 
+
+1. Open your terminal and clone the app to your local directory
+```
+git clone https://github.com/zilkipradita/ChatApp.git chatapp
+```
+2. Enter the chatapp directory and run the app
+```
+rails server
+```
+
+The Chatapp is up and running,
+and here is a preview
+
+--------------------------------------------------------------------------
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
