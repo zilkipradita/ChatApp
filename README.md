@@ -5,6 +5,21 @@ Rails version: 7.1.3.3
 
 Ruby version: ruby 3.2.4 (2024-04-23 revision af471c0e01) [x64-mingw-ucrt]
 
+I worked on the basic requirements, such as : 
+
+* Create a chatroom
+
+* Post messages with real-time update to the view
+  Using WebSockets - ActionCable
+
+* And Host it online
+
+And also i worked on the plus point, such as :
+
+* Implement unit tests
+  
+
+* Implement tasteful UI
 
 --------------------------------------------------------------------------
 
