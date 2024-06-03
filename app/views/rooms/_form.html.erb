@@ -1,0 +1,12 @@
+<script>
+$(function(){
+    $("#btnBack").click(function(){
+      window.location.href = "/";
+    });
+});
+</script>
+<%= simple_form_for @room do |form| %>
+  <%= form.input :name %>
+  <button  type="button" name="btnBack" id="btnBack" class="btn btn-info" style="">Back</button>
+  <%= form.submit "Save", class: 'btn btn-info' %>
+<% end %>

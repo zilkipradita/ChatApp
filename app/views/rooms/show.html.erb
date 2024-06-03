@@ -1,0 +1,77 @@
+<div class="row">
+  <div class="col-12 col-md-3">
+    <%= render partial: 'rooms_select' %>
+  </div>
+
+  <div class="col">
+    <div class="toast-container top-10 start-70 translate-bottom-x p-3">
+      <div class="toast text-bg-warning" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-body">
+          <div class="d-flex gap-4">
+            <span class="text-primary"><i class="fa-solid fa-circle-info fa-lg"></i></span>
+            <div class="d-flex flex-grow-1 align-items-center">
+              <span class="fw-semibold">Please type your message ..</span>
+              <button type="button" class="btn-close btn-close-sm btn-close-black ms-auto" data-bs-dismiss="toast"
+                aria-label="Close"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="background:#efefef;padding:10px;font-weight:bold;border-radius: 8px;">
+    <span class="navbar-text" style=""><%= @room.name %></span>
+    </div>
+
+    <div class="chat" data-channel-subscribe="room" data-room-id="<%= @room.id %>">
+
+    <div class="chat-history">
+    <ul class="m-b-0">
+
+      <% @room_messages.each do |room_message| %>
+
+        <li class="clearfix">
+          <div class="message-data">
+          <img src="<%= room_message.user.gravatar_url %>" class="avatar" alt="">
+          <span style="font-size:11px">(<%= room_message.created_at %>)</span>
+          </div>
+          <div class="message my-message"><%= room_message.message %></div>
+        </li>
+
+      <% end %>
+
+      </ul>
+      </div> 
+
+    </div>
+
+    <%= simple_form_for @room_message, remote: true do |form| %>
+      <div class="input-group mb-3">
+        <%= form.input :message, as: :string,
+                                 wrapper: false,
+                                 label: false,
+                                 input_html: {
+                                   class: 'chat-input', placeholder: 'Message'
+                                 } %>
+        <div class="input-group-append">
+          <%= form.submit "Send", class: 'btn btn-primary chat-input', id: 'btnSubmit' %>
+        </div>
+      </div>
+
+      <%= form.input :room_id, as: :hidden %>
+    <% end %>
+  </div>
+</div>
+<div class="d-none" data-role="message-template">
+  <div class="chat-history">
+    <ul class="m-b-0">
+      <li class="clearfix">
+        <div class="message-data">
+          <img src="" class="avatar" alt="" data-role="user-avatar">
+          <span style="font-size:11px" data-role="message-date"></span>
+        </div>
+        <div class="message my-message" data-role="message-text"></div>
+      </li>
+    </ul>
+  </div> 
+</div>

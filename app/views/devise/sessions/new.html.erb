@@ -1,0 +1,60 @@
+<section>
+  <div class="container-fluid h-custom">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-md-9 col-lg-6 col-xl-5">
+          <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp" class="img-fluid" alt="Sample image">
+        </div>
+
+        <div id="app" class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+          <form @submit="login" class="simple_form new_user" id="new_user" novalidate="novalidate" action="/users/sign_in" accept-charset="UTF-8" method="post">        
+            <input type="hidden" name="authenticity_token" value="">
+            <div data-mdb-input-init class="form-outline mb-4">
+              <input type="email" v-model="formData.email" class="form-control form-control-lg" placeholder="Enter a valid email address" name="user[email]" id="user_email" autofocus="autofocus"/>
+            </div>
+
+            <div data-mdb-input-init class="form-outline mb-3">
+              <input type="password" v-model="formData.password" class="form-control form-control-lg" placeholder="Enter password" autocomplete="current-password" name="user[password]" id="user_password"/>
+            </div>
+
+            <div class="d-flex justify-content-between align-items-center">
+              <fieldset class="mb-3 boolean optional user_remember_me">
+                <div class="form-check">
+                  <input v-model="formData.remember_me" name="user[remember_me]" type="hidden" value="0" autocomplete="off">
+                  <input v-model="formData.remember_me" class="form-check-input is-valid boolean optional" type="checkbox" value="1" name="user[remember_me]" id="user_remember_me">
+                  <label class="form-check-label boolean optional" for="user_remember_me">Remember me</label>
+                </div>
+              </fieldset>
+            </div>
+
+            <div class="text-center text-lg-start mt-4 pt-2">
+              <button  type="submit" name="commit" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-lg" style="padding-left: 2.5rem; padding-right: 2.5rem;">Login</button>
+              <p class="small fw-bold mt-2 pt-1 mb-0">Dont have an account? <a href="/users/sign_up" class="link-danger">Register</a></p>
+            </div>
+          </form>
+        </div>
+
+    </div>
+  </div>
+</section>
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+<script>
+  const app = Vue.createApp({
+    data() {
+      return {
+        formData: {
+          email: '',
+          password: '',
+          remember_me: ''
+        }
+      }
+    },
+    methods: {
+      login(){
+        
+      }
+    }
+  })
+ app.mount('#app')
+</script>
+</body>
+</html>

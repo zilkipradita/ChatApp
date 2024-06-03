@@ -1,0 +1,34 @@
+<div class="input-group">
+  <div class="input-group-prepend">
+  <%= link_to new_room_path, class: 'btn btn-info' do %>
+    Create a room
+  <% end %>
+  </div>
+</div>
+
+<% if @rooms.present? %>
+
+<div id="plist" class="people-list" style="overflow: auto;height:500px">
+  <ul class="list-unstyled chat-list mt-2 mb-0">
+  
+    <% @rooms.each do |room| %>
+      
+      <a href="/rooms/<%= room.id %>">
+      <li class="clearfix">
+        <img src="../discussion.png" alt="Room">
+        <div class="about">
+          <div class="name"> <%= room.name %></div>
+        </div>
+      </li>
+      </a>   
+
+    <% end %>
+  
+  </ul>
+</div>
+
+<% else %>
+  <div id="plist" class="people-list" style="padding:10px;">
+    rooms are empty
+  </div>
+<% end %>
