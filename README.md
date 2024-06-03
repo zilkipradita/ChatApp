@@ -75,7 +75,6 @@ The Chatapp is up and running, and here is a preview
   there are 4 tests in room_spec.rb, and all of them are passed
 
 
-  
 * Integration Test
 
   Open your terminal and run this test :
@@ -90,4 +89,25 @@ The Chatapp is up and running, and here is a preview
   and all of them are passed
 
 
+* Code Coverage
+  
+  Open your terminal and run this test :
+  ```
+   rspec
+  ```
+  it will run all of the test, unit and integration test
+  and this is the result :
+
+  ![run rspec](https://github.com/zilkipradita/ChatApp/assets/11170489/5664ef40-8748-4cc1-ae69-4aae6a07980b)
+
+  it will generate code coverage file located in ./coverage folder, just click the index.html file,
+  and this is the result :
+
+  ![coverage](https://github.com/zilkipradita/ChatApp/assets/11170489/f7aef949-088d-488a-ae62-1b52df2f6381)
+
+  thats all
+  thanks
+
+
+  
 
