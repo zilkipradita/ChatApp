@@ -75,5 +75,19 @@ The Chatapp is up and running, and here is a preview
   there are 4 tests in room_spec.rb, and all of them are passed
 
 
+  
+* Integration Test
+
+  Open your terminal and run this test :
+  ```
+   rspec spec/features/user_signup_spec.rb
+  ```
+  and this is the user_signup_spec.rb file and the test result :
+
+  ![user sign up](https://github.com/zilkipradita/ChatApp/assets/11170489/199acaf4-0611-4f9c-9411-1b4bccfcf336)
+
+  there are 2 tests scenario in user_signup_spec.rb (User creates a new account and User creates a new account and creates room)
+  and all of them are passed
+
 
 
