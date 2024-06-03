@@ -1,11 +1,11 @@
 # README
-This is my Rails git for the test (zilkipradita, mr.zilkipradita@gmail.com)
+**This is my Rails git for the test (zilkipradita, mr.zilkipradita@gmail.com)**
 
 Rails version: 7.1.3.3
 
 Ruby version: ruby 3.2.4 (2024-04-23 revision af471c0e01) [x64-mingw-ucrt]
 
-I worked on the basic requirements, such as : 
+**I worked on the basic requirements, such as :** 
 
 * Create a chatroom
 
@@ -15,13 +15,22 @@ I worked on the basic requirements, such as :
 
 * And Host it online
 
-And also i worked on the plus point, such as :
+**And also i worked on the plus point, such as :**
 
 * Implement unit tests
 
-  lorem ipsum 
+  For the Unit Tests i'm using RSpec, to test the models,
+  and by using it i also worked on the Integration Testing for Sign Up scenario dan create room scenario.
+  and i also make code coverage using SimpleCov,
+  you can see the result of all of the test in installation section
 
 * Implement tasteful UI
+
+  i tried to make the UI more like chat app, so i implement some design in every page, you can see it in preview section below
+
+* Use modern JS frontend eg. React/Vue
+
+  i'm using Vue.js via CDN for the login submit form
 
 --------------------------------------------------------------------------
 
