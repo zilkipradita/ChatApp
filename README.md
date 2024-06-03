@@ -10,6 +10,7 @@ I worked on the basic requirements, such as :
 * Create a chatroom
 
 * Post messages with real-time update to the view
+  
   Using WebSockets - ActionCable
 
 * And Host it online
@@ -17,7 +18,8 @@ I worked on the basic requirements, such as :
 And also i worked on the plus point, such as :
 
 * Implement unit tests
-  
+
+  lorem ipsum 
 
 * Implement tasteful UI
 
