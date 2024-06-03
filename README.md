@@ -22,7 +22,7 @@ Ruby version: ruby 3.2.4 (2024-04-23 revision af471c0e01) [x64-mingw-ucrt]
   For the test, i'm using RSpec, not only for the Unit Test (test user and room models),
   but also for Integration Testing (test for user signs up scenario and user creates room scenario)
   and for the code coverage i'm using SimpleCov, i worked on all of them,
-  and you can see the result of the test in installation section
+  and you can see the result of the test in Unit Test, Integration Test, Code Coverage section below
 
 * Implement tasteful UI
 
