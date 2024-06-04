@@ -8,8 +8,8 @@ gem "rails", "~> 7.1.3", ">= 7.1.3.3"
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
 
-# Use sqlite3 as the database for Active Record
-gem "sqlite3", "~> 1.4"
+# Use pg as the database for Active Record
+gem "pg", "~> 1.1"
 
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", ">= 5.0"
@@ -76,7 +76,7 @@ gem 'redis'
 gem 'rspec', '~> 3.13'
 gem 'rspec-rails', '~> 6.1', '>= 6.1.2'
 gem 'simplecov', require: false, group: :test
-gem 'pg'
+gem "pg", "~> 1.1"
 gem 'bun'
 gem 'rubyzip', '~> 2.3', '>= 2.3.2'
 gem 'execjs', '~> 2.9', '>= 2.9.1'
