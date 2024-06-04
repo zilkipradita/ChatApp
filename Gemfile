@@ -76,7 +76,3 @@ gem 'redis'
 gem 'rspec', '~> 3.13'
 gem 'rspec-rails', '~> 6.1', '>= 6.1.2'
 gem 'simplecov', require: false, group: :test
-gem "pg", "~> 1.1"
-gem 'bun'
-gem 'rubyzip', '~> 2.3', '>= 2.3.2'
-gem 'execjs', '~> 2.9', '>= 2.9.1'
