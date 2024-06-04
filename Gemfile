@@ -79,3 +79,4 @@ gem 'simplecov', require: false, group: :test
 gem 'pg'
 gem 'bun'
 gem 'rubyzip', '~> 2.3', '>= 2.3.2'
+gem 'execjs', '~> 2.9', '>= 2.9.1'
