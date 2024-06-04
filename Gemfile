@@ -76,3 +76,4 @@ gem 'redis'
 gem 'rspec', '~> 3.13'
 gem 'rspec-rails', '~> 6.1', '>= 6.1.2'
 gem 'simplecov', require: false, group: :test
+gem 'pg'
