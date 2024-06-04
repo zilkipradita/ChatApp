@@ -43,15 +43,6 @@
           null
         ]
       },
-      "C:/chatapp/app/models/room.rb": {
-        "lines": [
-          1,
-          1,
-          null,
-          1,
-          null
-        ]
-      },
       "C:/chatapp/app/controllers/application_controller.rb": {
         "lines": [
           1,
@@ -121,6 +112,15 @@
           1,
           1,
           null,
+          null
+        ]
+      },
+      "C:/chatapp/app/models/room.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
           null
         ]
       },
@@ -233,6 +233,6 @@
         }
       }
     },
-    "timestamp": 1717400081
+    "timestamp": 1717409297
   }
 }
