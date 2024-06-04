@@ -350,6 +350,7 @@ DEPENDENCIES
   redis
   rspec (~> 3.13)
   rspec-rails (~> 6.1, >= 6.1.2)
+  rubyzip
   selenium-webdriver
   simple_form
   simplecov

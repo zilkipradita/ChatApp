@@ -78,3 +78,4 @@ gem 'rspec-rails', '~> 6.1', '>= 6.1.2'
 gem 'simplecov', require: false, group: :test
 gem 'pg'
 gem 'bun'
+gem 'rubyzip'
