@@ -57,7 +57,7 @@ The Chatapp is up and running, and here is a preview
 
 **Chat Page**
 
-![chat](https://github.com/zilkipradita/ChatApp/assets/11170489/69cf793a-69ca-4f67-b638-1f22d8543a62)
+![new chat page](https://github.com/zilkipradita/ChatApp/assets/11170489/da52a1b7-f6b0-4a82-8163-b9a24356ca22)
 
 --------------------------------------------------------------------------
 ## Unit Test, Integration Test, Code Coverage
