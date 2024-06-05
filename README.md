@@ -15,6 +15,8 @@ Ruby version: ruby 3.2.4 (2024-04-23 revision af471c0e01) [x64-mingw-ucrt]
 
 * And Host it online
 
+  Please visit this url to test it online https://chatapp-i33f.onrender.com/
+
 **And also i worked on the plus point, such as :**
 
 * Implement unit tests
