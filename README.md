@@ -11,13 +11,15 @@ Ruby version: ruby 3.2.4 (2024-04-23 revision af471c0e01) [x64-mingw-ucrt]
 
 * Post messages with real-time update to the view
   
-  Using WebSockets - ActionCable
+  Using WebSockets - ActionCable, Redis
 
 * And Host it online
 
   i host it on render.com, please visit this url to test it online https://chatapp-i33f.onrender.com/
 
   ![render](https://github.com/zilkipradita/ChatApp/assets/11170489/ba139d6f-f165-4f62-9d56-a94b4027b0a3)
+
+  my services on render.com
 
 **And also i worked on the plus point, such as :**
 
@@ -45,11 +47,13 @@ Please follow this steps to run the app :
 ```
 git clone https://github.com/zilkipradita/ChatApp.git chatapp
 ```
-2. Enter the chatapp directory and migrate tables
+2. Make sure your postgresql services is running
+3. Enter the chatapp directory and migrate tables
 ```
 rails db:migrate
 ```
-3. Run the app
+4. Run your redis server
+5. Run the app
 ```
 rails server
 ```
