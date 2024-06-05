@@ -21,6 +21,15 @@ Ruby version: ruby 3.2.4 (2024-04-23 revision af471c0e01) [x64-mingw-ucrt]
 
   my services on render.com
 
+  Preview on render.com, in case the services is inactivity,
+  
+  Login Page
+  ![login render](https://github.com/zilkipradita/ChatApp/assets/11170489/e0222cc5-f0be-4c31-bb80-14ac54368a5e)
+
+  Chat Page
+  ![Cuplikan layar 2024-06-05 122108](https://github.com/zilkipradita/ChatApp/assets/11170489/032d3e60-1cf7-4685-909a-895eea2e881d)
+
+
 **And also i worked on the plus point, such as :**
 
 * Implement unit tests
