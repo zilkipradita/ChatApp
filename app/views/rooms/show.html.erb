@@ -33,6 +33,7 @@
         <li class="clearfix">
           <div class="message-data">
           <img src="<%= room_message.user.gravatar_url %>" class="avatar" alt="">
+          <span style="font-size:12px;font-weight:bold"><%= room_message.user.username %></span>
           <span style="font-size:11px">(<%= room_message.created_at %>)</span>
           </div>
           <div class="message my-message"><%= room_message.message %></div>
@@ -46,6 +47,7 @@
     </div>
 
     <%= simple_form_for @room_message, remote: true do |form| %>
+      
       <div class="input-group mb-3">
         <%= form.input :message, as: :string,
                                  wrapper: false,
@@ -59,6 +61,7 @@
       </div>
 
       <%= form.input :room_id, as: :hidden %>
+      <input type="hidden" name="room_message[username]" id="room_message_username" value="<%= current_user.username %>">
     <% end %>
   </div>
 </div>
@@ -68,6 +71,7 @@
       <li class="clearfix">
         <div class="message-data">
           <img src="" class="avatar" alt="" data-role="user-avatar">
+          <span style="font-size:12px;font-weight:bold" data-role="message-username"></span>
           <span style="font-size:11px" data-role="message-date"></span>
         </div>
         <div class="message my-message" data-role="message-text"></div>

@@ -64,15 +64,19 @@ The Chatapp is up and running, and here is a preview
 
 * Unit Test
 
-  Open your terminal and run this test :
+  Open your terminal and run this :
   ```
-   rspec spec/models/room_spec.rb
+   rake db:migrate RAILS_ENV=test
   ```
-  and this is the room_spec.rb file and the test result :
+  and run this test :
+  ```
+   rspec spec/models/user_spec.rb
+  ```
+  and this is the user_spec.rb file and the test result :
   
   ![user](https://github.com/zilkipradita/ChatApp/assets/11170489/90bdde0b-7a9e-4e5f-b666-0c6ee8f9adad)
   
-  there are 4 tests in room_spec.rb, and all of them are passed
+  there are 4 tests in user_spec.rb, and all of them are passed
 
 
 * Integration Test

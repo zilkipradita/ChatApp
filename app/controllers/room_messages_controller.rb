@@ -4,7 +4,8 @@ class RoomMessagesController < ApplicationController
   def create
     @room_message = RoomMessage.create user: current_user,
                                        room: @room,
-                                       message: params.dig(:room_message, :message)
+                                       message: params.dig(:room_message, :message),
+                                       username: params.dig(:room_message, :username)
   
     RoomChannel.broadcast_to @room, @room_message
   end
