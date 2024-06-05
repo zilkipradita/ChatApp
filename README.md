@@ -15,7 +15,9 @@ Ruby version: ruby 3.2.4 (2024-04-23 revision af471c0e01) [x64-mingw-ucrt]
 
 * And Host it online
 
-  Please visit this url to test it online https://chatapp-i33f.onrender.com/
+  i host it on render.com, please visit this url to test it online https://chatapp-i33f.onrender.com/
+
+  ![render](https://github.com/zilkipradita/ChatApp/assets/11170489/ba139d6f-f165-4f62-9d56-a94b4027b0a3)
 
 **And also i worked on the plus point, such as :**
 
