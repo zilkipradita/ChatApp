@@ -48,9 +48,9 @@ Please follow this steps to run the app :
 git clone https://github.com/zilkipradita/ChatApp.git chatapp
 ```
 2. Make sure your postgresql services is running
-3. Enter the chatapp directory and migrate tables
+3. Enter the chatapp directory and run this
 ```
-rails db:migrate
+rails db:setup
 ```
 4. Run your redis server
 5. Run the app
